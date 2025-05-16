@@ -21,44 +21,37 @@ This project investigates **Gender Entropy Bias** — disparities in information
 
 ## 🗂 Repository Structure
 
-GenderEntropyBias/
-├── data/ # Raw gendered question datasets
-│ ├── Questions_Education_Recommendations.xlsx
-│ ├── Questions_Health_Recommendations.xlsx
-│ ├── Questions_Investment_Recommendations.xlsx
-│ └── Questions_Job_Recommendations.xlsx
-│
-├── output/ # Raw LLM responses by domain and model
-│ └── Education/
-│ └── Responses_{model}.xlsx
-│ └── Health/
-│ └── Responses_{model}.xlsx
-│ └── Investment/
-│ └── Responses_{model}.xlsx
-│ └── Job/
-│ └── Responses_{model}.xlsx
-│
-├── evaluated_output/ # Evaluation outputs
-│ ├── LLM-as-Judge_ChatGPT-4o_1_Iter/
-│ ├── Statistical_Evaluation_1_Iter/
-│ └── Variability_Analysis_50_Iter/
-│
-├── debiasing_data/ # Debiased responses from iterative prompting
-│ └── Education/
-│ └── Health/
-│ └── Investment/
-│ └── Job/
-│ ├── Debiased_Responses_ChatGPT-3.5_FemaleFirst.xlsx
-│ ├── Debiased_Responses_ChatGPT-3.5_MaleFirst.xlsx
-│ └── final.xlsx
-│
-├── load_dataset.py # Script to load dataset (e.g. from Hugging Face)
-├── requirements.txt # Python dependencies
-├── LICENSE # MIT License
-└── README.md # This file
+- `data/` — Raw gendered question datasets  
+  - `Questions_Education_Recommendations.xlsx`  
+  - `Questions_Health_Recommendations.xlsx`  
+  - `Questions_Investment_Recommendations.xlsx`  
+  - `Questions_Job_Recommendations.xlsx`  
 
-Copy
-Edit
+- `output/` — Raw LLM responses by domain and model  
+  - `Education/Responses_{model}.xlsx`  
+  - `Health/Responses_{model}.xlsx`  
+  - `Investment/Responses_{model}.xlsx`  
+  - `Job/Responses_{model}.xlsx`  
+
+- `evaluated_output/` — Evaluation outputs  
+  - `LLM-as-Judge_ChatGPT-4o_1_Iter/`  
+  - `Statistical_Evaluation_1_Iter/`  
+  - `Variability_Analysis_50_Iter/`  
+
+- `debiasing_data/` — Debiased responses from iterative prompting  
+  - `Education/`  
+  - `Health/`  
+  - `Investment/`  
+  - `Job/`  
+    - `Debiased_Responses_ChatGPT-3.5_FemaleFirst.xlsx`  
+    - `Debiased_Responses_ChatGPT-3.5_MaleFirst.xlsx`  
+    - `final.xlsx`  
+
+- `load_dataset.py` — Script to load dataset (e.g., from Hugging Face)  
+- `requirements.txt` — Python dependencies  
+- `LICENSE` — MIT License  
+- `README.md` — This file  
+
 
 ---
 
